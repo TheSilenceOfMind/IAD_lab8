@@ -1,0 +1,18 @@
+#header {
+    background-color : rgba(184, 255, 238, 0.8);
+    font-size : 17pt;
+    font-family : sans-serif;
+    padding : 17pt;
+}
+
+#footer {
+    background-color : rgba(227, 255, 248, 0.25);
+    font-size : 11pt;
+    font-family : sans-serif;
+    padding : 15pt;
+    text-align : center;
+}
+
+#content {
+
+}

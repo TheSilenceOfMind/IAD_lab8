@@ -11,18 +11,41 @@
 <h:head>
     <title>StartPage</title>
     <link rel="stylesheet" type="text/css" href="#{request.contextPath}/sources/css/StartPage.css"/>
+    <link rel="stylesheet" type="text/css" href="#{request.contextPath}/sources/css/commonLayout.css"/>
 </h:head>
 
 <h:body>
-    <ui:insert name="header"/>
+    <div id="header">
+        Балад К.В.<br/>
+        P3211<br/>
+        Вариант: 105<br/>
+        <h:graphicImage value="../resources/company_logo.png"/>
+    </div>
+
+
     <h:form>
         <h:outputText id="timeOutput" value="#{timeBean.time}"/>
+        <!-- It's impossible to use poll with templates (ui:define)
+             because the value isn't upading in the interval.
+             It may caused with the -->
         <p:poll interval="5" listener="#{timeBean.update}" update="timeOutput"/>
-        <br/>
-        <br/>
-        <h:commandLink action="MainPage">КЛИКНИ НА МЕНЯ, И ТЫ ПОПАДЕШЬ НА ГЛАВНУЮ СТРАНИЦУ!!!</h:commandLink>
+        <br/><br/>
+        <h:link value="КЛИКНИ НА МЕНЯ, И ТЫ ПОПАДЕШЬ НА ГЛАВНУЮ СТРАНИЦУ!!!" outcome="MainPage.xhtml"/>
     </h:form>
-    <ui:include src="templates/DefaultFooter.xhtml"/>
+
+
+    <div id="footer">
+        <p>Posted by:
+            <a href="https://github.com/theSilenceOfMind">
+                TheSilenceOfMind
+            </a>
+        </p>
+        <p>Contact information:
+            <a href="mailto:baladkirill@mail.ru">
+                baladkirill@mail.ru
+            </a>
+        </p>
+    </div>
 </h:body>
 
 </html>
