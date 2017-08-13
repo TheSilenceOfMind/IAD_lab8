@@ -5,6 +5,12 @@
     padding : 17pt;
 }
 
+#h_image {
+    position : fixed;
+    top : 8px;
+    right : 8px;
+}
+
 #footer {
     background-color : rgba(227, 255, 248, 0.25);
     font-size : 11pt;
