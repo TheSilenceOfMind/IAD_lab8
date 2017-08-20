@@ -10,10 +10,41 @@
 
 <h:head>
     <title>MainPage</title>
+    <link rel="stylesheet" type="text/css" href="#{request.contextPath}/sources/css/commonLayout.css"/>
 </h:head>
 
 <h:body>
-    <h1>Это главная страница!!!</h1>
+    <ui:composition template="templates/commonLayout.xhtml">
+        <ui:define name="content">
+            <ui:debug/>
+            <h:form id="MainPageForm">
+                <h3>Выберите X: </h3>
+                <p:commandButton value="-5"/>
+                <p:commandButton value="-4"/>
+                <p:commandButton value="-3"/>
+                <p:commandButton value="-2"/>
+                <p:commandButton value="-1"/>
+                <p:commandButton value= "0"/>
+                <p:commandButton value="1"/>
+                <p:commandButton value="2"/>
+                <p:commandButton value="3"/>
+
+                <h3>Введите Y: </h3>
+                <h:inputText>
+                </h:inputText>
+
+                <h3>Выберите радиус: </h3>
+                <h:selectOneRadio>
+                    <f:selectItem itemValue="1" itemLabel="1"/>
+                    <f:selectItem itemValue="2" itemLabel="2"/>
+                    <f:selectItem itemValue="3" itemLabel="3"/>
+                    <f:selectItem itemValue="4" itemLabel="4"/>
+                    <f:selectItem itemValue="5" itemLabel="5"/>
+                </h:selectOneRadio>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
 </h:body>
 
 </html>
