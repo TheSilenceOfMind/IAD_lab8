@@ -5,46 +5,55 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:ui = "http://java.sun.com/jsf/facelets"
       xmlns:p = "http://primefaces.org/ui">
-
 <h:head>
     <title>MainPage</title>
-    <link rel="stylesheet" type="text/css" href="#{request.contextPath}/sources/css/commonLayout.css"/>
+    <h:outputStylesheet library="default" name="css/MainPage.css"/>
 </h:head>
 
 <h:body>
-    <ui:composition template="templates/commonLayout.xhtml">
-        <ui:define name="content">
-            <ui:debug/>
-            <h:form id="MainPageForm">
-                <h3>Выберите X: </h3>
-                <p:commandButton value="-5"/>
-                <p:commandButton value="-4"/>
-                <p:commandButton value="-3"/>
-                <p:commandButton value="-2"/>
-                <p:commandButton value="-1"/>
-                <p:commandButton value= "0"/>
-                <p:commandButton value="1"/>
-                <p:commandButton value="2"/>
-                <p:commandButton value="3"/>
+    <div id="header">
+        Вариант: 105<br/>
+    </div>
 
-                <h3>Введите Y: </h3>
-                <h:inputText>
-                </h:inputText>
+    <h:form id="inputForm">
+        <h3>Выберите X: </h3>
+        <p:commandButton value="-5"/>
+        <p:commandButton value="-4"/>
+        <p:commandButton value="-3"/>
+        <p:commandButton value="-2"/>
+        <p:commandButton value="-1"/>
+        <p:commandButton value= "0"/>
+        <p:commandButton value="1"/>
+        <p:commandButton value="2"/>
+        <p:commandButton value="3"/>
 
-                <h3>Выберите радиус: </h3>
-                <h:selectOneRadio>
-                    <f:selectItem itemValue="1" itemLabel="1"/>
-                    <f:selectItem itemValue="2" itemLabel="2"/>
-                    <f:selectItem itemValue="3" itemLabel="3"/>
-                    <f:selectItem itemValue="4" itemLabel="4"/>
-                    <f:selectItem itemValue="5" itemLabel="5"/>
-                </h:selectOneRadio>
+        <h3>Введите Y: </h3>
+        <h:inputText>
+        </h:inputText>
 
-            </h:form>
-        </ui:define>
-    </ui:composition>
+        <h3>Выберите радиус: </h3>
+        <h:selectOneRadio>
+            <f:selectItem itemValue="1" itemLabel="1"/>
+            <f:selectItem itemValue="2" itemLabel="2"/>
+            <f:selectItem itemValue="3" itemLabel="3"/>
+            <f:selectItem itemValue="4" itemLabel="4"/>
+            <f:selectItem itemValue="5" itemLabel="5"/>
+        </h:selectOneRadio>
+    </h:form>
+
+    <div id="footer">
+        <p>Posted by:
+            <a href="https://github.com/theSilenceOfMind">
+                TheSilenceOfMind
+            </a>
+        </p>
+        <p>Contact information:
+            <a href="mailto:baladkirill@mail.ru">
+                baladkirill@mail.ru
+            </a>
+        </p>
+    </div>
 </h:body>
 
 </html>
