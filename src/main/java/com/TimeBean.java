@@ -13,9 +13,9 @@ import java.util.Date;
 )
 @ApplicationScoped
 public class TimeBean {
-    private String time;
+    private Date time;
 
-    public String getTime() {
+    public Date getTime() {
         if (time == null) {
             update();
         }
@@ -23,6 +23,6 @@ public class TimeBean {
     }
 
     public void update() {
-        time = (new Date()).toString();
+        time = (new Date());
     }
 }
