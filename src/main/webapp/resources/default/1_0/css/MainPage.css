@@ -3,12 +3,7 @@
     font-size : 17pt;
     font-family : sans-serif;
     padding : 17pt;
-}
-
-#h_image {
-    position : fixed;
-    top : 8px;
-    right : 8px;
+    text-align : center;
 }
 
 #footer {
@@ -19,6 +14,10 @@
     text-align : center;
 }
 
-#content {
-
+#inputForm {
+    background-color : rgba(198, 255, 241, 0.49);
+    font-size : 11pt;
+    font-family : sans-serif;
+    padding : 17pt;
+    text-align: left;
 }
