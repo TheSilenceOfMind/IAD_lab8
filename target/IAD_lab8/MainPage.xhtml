@@ -16,35 +16,52 @@
         Вариант: 105<br/>
     </div>
 
-    <h:form id="inputForm">
-        <h3>Выберите X: </h3>
-        <p:commandButton value="-5"/>
-        <p:commandButton value="-4"/>
-        <p:commandButton value="-3"/>
-        <p:commandButton value="-2"/>
-        <p:commandButton value="-1"/>
-        <p:commandButton value= "0"/>
-        <p:commandButton value="1"/>
-        <p:commandButton value="2"/>
-        <p:commandButton value="3"/>
+    <div id="content">
+        <h:form id="inputForm">
+            <h3>Выберите X: </h3>
+            <p:commandButton value="-5"/>
+            <p:commandButton value="-4"/>
+            <p:commandButton value="-3"/>
+            <p:commandButton value="-2"/>
+            <p:commandButton value="-1"/>
+            <p:commandButton value= "0"/>
+            <p:commandButton value="1"/>
+            <p:commandButton value="2"/>
+            <p:commandButton value="3"/>
 
-        <h3>Введите Y: </h3>
-        <h:inputText>
-        </h:inputText>
+            <h3>Введите Y: </h3>
+            <h:inputText>
+            </h:inputText>
 
-        <h3>Выберите радиус: </h3>
-        <h:selectOneRadio>
-            <f:selectItem itemValue="1" itemLabel="1"/>
-            <f:selectItem itemValue="2" itemLabel="2"/>
-            <f:selectItem itemValue="3" itemLabel="3"/>
-            <f:selectItem itemValue="4" itemLabel="4"/>
-            <f:selectItem itemValue="5" itemLabel="5"/>
-        </h:selectOneRadio>
-    </h:form>
+            <h3>Выберите радиус: </h3>
+            <h:selectOneRadio>
+                <f:selectItem itemValue="1" itemLabel="1"/>
+                <f:selectItem itemValue="2" itemLabel="2"/>
+                <f:selectItem itemValue="3" itemLabel="3"/>
+                <f:selectItem itemValue="4" itemLabel="4"/>
+                <f:selectItem itemValue="5" itemLabel="5"/>
+            </h:selectOneRadio>
+        </h:form>
 
-    <h:form id="linkForm">
-        <h:link value="КЛИКНИ НА МЕНЯ, И ТЫ ПОПАДЕШЬ НА СТАРТОВУЮ СТРАНИЦУ!!!" outcome="StartPage.xhtml"/>
-    </h:form>
+        <h:form id="linkForm">
+            <h:link value="КЛИКНИ НА МЕНЯ, И ТЫ ПОПАДЕШЬ НА СТАРТОВУЮ СТРАНИЦУ!!!" outcome="StartPage.xhtml"/>
+        </h:form>
+
+        <h:dataTable id="resTable">
+            <h:column>
+                <f:facet name="header">X</f:facet>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Y</f:facet>
+            </h:column>
+            <h:column>
+                <f:facet name="header">R</f:facet>
+            </h:column>
+            <h:column>
+                <f:facet name="header">isInside</f:facet>
+            </h:column>
+        </h:dataTable>
+    </div>
 
     <div id="footer">
         <p>Posted by:

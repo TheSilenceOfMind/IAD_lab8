@@ -15,17 +15,17 @@
 }
 
 #inputForm {
-    background-color : rgba(198, 255, 241, 0.49);
     font-size : 11pt;
-    font-family : sans-serif;
-    padding : 17pt;
     text-align: left;
 }
 
 #linkForm {
-    background-color : rgba(198, 255, 241, 0.49);
     font-size : 17pt;
+    text-align: center;
+}
+
+#content {
+    background-color : rgba(198, 255, 241, 0.49);
     font-family : sans-serif;
     padding : 17pt;
-    text-align: center;
 }
