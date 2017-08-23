@@ -5,7 +5,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p = "http://primefaces.org/ui">
+      xmlns:p = "http://primefaces.org/ui"
+      xmlns:c = "http://java.sun.com/jstl/core"
+      xmlns:ui = "http://java.sun.com/jsf/facelets"
+>
 <h:head>
     <title>MainPage</title>
     <h:outputStylesheet library="default" name="css/MainPage.css"/>
@@ -18,49 +21,74 @@
 
     <div id="content">
         <h:form id="inputForm">
+
             <h3>Выберите X: </h3>
-            <p:commandButton value="-5"/>
-            <p:commandButton value="-4"/>
-            <p:commandButton value="-3"/>
-            <p:commandButton value="-2"/>
-            <p:commandButton value="-1"/>
-            <p:commandButton value= "0"/>
-            <p:commandButton value="1"/>
-            <p:commandButton value="2"/>
-            <p:commandButton value="3"/>
+            <ui:repeat value="#{num.numbers}" var="i">
+                <p:commandButton value="#{i}" action="#{PointsData.setX(i)}"/>
+            </ui:repeat>
 
             <h3>Введите Y: </h3>
-            <h:inputText>
+            <h:inputText id="valueY" value="#{PointsData.y}" required="true">
+                <f:validator validatorId="inputValidator"/>
             </h:inputText>
+            <h:message for="valueY"/>
 
             <h3>Выберите радиус: </h3>
-            <h:selectOneRadio>
+            <h:selectOneRadio value="#{PointsData.r}" onchange="saveR()">
                 <f:selectItem itemValue="1" itemLabel="1"/>
                 <f:selectItem itemValue="2" itemLabel="2"/>
                 <f:selectItem itemValue="3" itemLabel="3"/>
                 <f:selectItem itemValue="4" itemLabel="4"/>
                 <f:selectItem itemValue="5" itemLabel="5"/>
             </h:selectOneRadio>
+            <br/>
+
+            <!--TODO:
+                Error in glassFish log caused by action. Fix it.
+                -->
+            <h:commandButton value="Добавить точку"
+                             action="#{PointsData.addPoint()}"
+                             style="height: 60px; width: 120px;"
+            />
         </h:form>
 
         <h:form id="linkForm">
-            <h:link value="КЛИКНИ НА МЕНЯ, И ТЫ ПОПАДЕШЬ НА СТАРТОВУЮ СТРАНИЦУ!!!" outcome="StartPage.xhtml"/>
+            <h:commandLink action="toStartPage">КЛИКНИ НА МЕНЯ, И ТЫ ПОПАДЕШЬ НА СТАРТОВУЮ СТРАНИЦУ!!!</h:commandLink>
         </h:form>
 
-        <h:dataTable id="resTable">
-            <h:column>
-                <f:facet name="header">X</f:facet>
-            </h:column>
-            <h:column>
-                <f:facet name="header">Y</f:facet>
-            </h:column>
-            <h:column>
-                <f:facet name="header">R</f:facet>
-            </h:column>
-            <h:column>
-                <f:facet name="header">isInside</f:facet>
-            </h:column>
-        </h:dataTable>
+        <div id="div-res-table">
+            <h:dataTable value="#{PointsData.points}"
+                         var="p"
+                         id="resTable"
+                         width="100%"
+                         styleClass="res-table"
+                         headerClass="res-table-header"
+                         rowClasses="res-table-odd-row,res-table-even-row"
+            >
+                <h:column>
+                    <f:facet name="header">X</f:facet>
+                    <h:outputText value="#{p.getX()}">
+                        <f:convertNumber pattern="#0.###"/>
+                    </h:outputText>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Y</f:facet>
+                    <h:outputText value="#{p.getY()}">
+                        <f:convertNumber pattern="#0.###"/>
+                    </h:outputText>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">R</f:facet>
+                    <h:outputText value="#{p.getR()}">
+                        <f:convertNumber pattern="#0.###"/>
+                    </h:outputText>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">isInside</f:facet>
+                    #{p.getIsInside()}
+                </h:column>
+            </h:dataTable>
+        </div>
     </div>
 
     <div id="footer">
