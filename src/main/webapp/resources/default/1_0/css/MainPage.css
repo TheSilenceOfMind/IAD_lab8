@@ -38,6 +38,7 @@
 #div-res-table {
     overflow: auto;
     max-height: 250px;
+    padding-top: 20px;
 }
 
 .res-table-header{
