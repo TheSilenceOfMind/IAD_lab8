@@ -55,9 +55,9 @@ public class PointsData implements Serializable {
         if (dbConnection == null) {
             try {
                 Class.forName("oracle.jdbc.driver.OracleDriver");
-                String URL = "jdbc:oracle:thin:@localhost:15121:XE";
-                String USER = "s207536";
-                String PASS = "12345";
+                String URL = "jdbc:oracle:thin:@localhost:1521:XE";
+                String USER = "Kirill";
+                String PASS = "0797";
                 dbConnection = DriverManager.getConnection(URL, USER, PASS);
                 System.out.println("Connection has been established");
             } catch (Exception e) {
