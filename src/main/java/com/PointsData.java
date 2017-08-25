@@ -5,11 +5,12 @@ import javax.faces.bean.SessionScoped;
 import java.io.Serializable;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Collections;
 
 @ManagedBean (name="PointsData")
 @SessionScoped
 public class PointsData implements Serializable {
-    private String x = "0";
+    private String x;
     private String y;
     private String r;
     ArrayList<Point> points;
@@ -105,15 +106,19 @@ public class PointsData implements Serializable {
         } finally {
             dbConnection = null;
         }
+        Collections.reverse(points);
         return points;
     }
 
     public String parseRequestAndUpdateDB () {
         try {
-            float x = Float.parseFloat(getX());
-            float y = Float.parseFloat(getY());
-            float r = Float.parseFloat(getR());
-            Point point = new Point(x, y, r, checkIsInside((double) x, (double) y, (double) r));
+            float xx = Float.parseFloat(getX());
+            float yy = Float.parseFloat(getY());
+            float rr = Float.parseFloat(getR());
+            Point point = new Point(xx, yy, rr, checkIsInside((double) xx, (double) yy, (double) rr));
+            r = null;
+            y = null;
+            x = null;
             addPointToDB(point);
         } catch (Exception e) {
             System.err.println("Exception occured in method parseRequestAndUpdateDB" + e.getMessage());

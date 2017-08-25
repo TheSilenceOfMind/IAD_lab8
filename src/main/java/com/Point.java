@@ -41,6 +41,13 @@ public class Point {
         return this.isInside;
     }
 
+    public String getIsInsideString() {
+        if (this.isInside)
+            return "IN";
+        else
+            return "OUT";
+    }
+
     public void setIsInside(boolean inside) {
         this.isInside = inside;
     }
