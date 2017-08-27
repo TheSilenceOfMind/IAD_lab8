@@ -6,11 +6,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1865868-3426-4451-9071-b7b00db00757" name="Default" comment="">
+    <list default="true" id="e1865868-3426-4451-9071-b7b00db00757" name="Default" comment="Validation with fields done totally">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_json_javax_json_api_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/WebSocketListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/canvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/webSocket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/IAD_lab8_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/IAD_lab8_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IAD_lab8.iml" afterPath="$PROJECT_DIR$/IAD_lab8.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Point.java" afterPath="$PROJECT_DIR$/src/main/java/com/Point.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/PointsData.java" afterPath="$PROJECT_DIR$/src/main/java/com/PointsData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/MainPage.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/MainPage.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/MainPage.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/MainPage.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IAD_lab8/MainPage.xhtml" afterPath="$PROJECT_DIR$/target/IAD_lab8/MainPage.xhtml" />
     </list>
     <list id="b257eb1f-aba2-462b-8b44-76f399ede939" name="Using of templates rejected, template and stylesheet for template have been removed." comment="Using of templates rejected, template and stylesheet for template have been removed." />
@@ -69,14 +78,13 @@
       <file leaf-file-name="MainPage.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/MainPage.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+            <state relative-caret-position="129">
+              <caret line="91" column="22" lean-forward="true" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
               <folding>
-                <element signature="n#div#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#h:body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1503694737816" expanded="true" signature="1741:1880" ph="{...}" />
-                <marker date="1503694737816" expanded="true" signature="2227:2366" ph="{...}" />
-                <marker date="1503694737816" expanded="true" signature="2996:3135" ph="{...}" />
+                <marker date="1503856257583" expanded="true" signature="2032:2171" ph="{...}" />
+                <marker date="1503856257583" expanded="true" signature="2541:2680" ph="{...}" />
+                <marker date="1503856257583" expanded="true" signature="3310:3449" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -85,41 +93,17 @@
       <file leaf-file-name="PointsData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/PointsData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="112">
+              <caret line="74" column="65" lean-forward="false" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1503694665864" expanded="true" signature="1995:2030" ph="INSERT INTO RESULTS... " />
-                <marker date="1503694665864" expanded="true" signature="2842:2877" ph="SELECT X, Y,... RESULTS" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Point.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="35" />
-              <folding>
-                <element signature="e#314#315#0" expanded="false" />
-                <element signature="e#343#344#0" expanded="false" />
-                <element signature="e#376#377#0" expanded="false" />
-                <element signature="e#402#403#0" expanded="false" />
-                <element signature="e#429#430#0" expanded="false" />
-                <element signature="e#458#459#0" expanded="false" />
-                <element signature="e#491#492#0" expanded="false" />
-                <element signature="e#517#518#0" expanded="false" />
-                <element signature="e#544#545#0" expanded="false" />
-                <element signature="e#573#574#0" expanded="false" />
-                <element signature="e#606#607#0" expanded="false" />
-                <element signature="e#632#633#0" expanded="false" />
-                <element signature="e#668#669#0" expanded="false" />
-                <element signature="e#704#705#0" expanded="false" />
-                <element signature="e#889#890#0" expanded="false" />
-                <element signature="e#927#928#0" expanded="false" />
-                <element signature="e#959#960#0" expanded="false" />
-                <element signature="e#1043#1044#0" expanded="false" />
+                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#4135#4144#0" expanded="true" />
+                <element signature="e#4195#4202#0" expanded="true" />
+                <marker date="1503854484015" expanded="true" signature="1994:2029" ph="INSERT INTO RESULTS... " />
+                <marker date="1503854484015" expanded="true" signature="2841:2876" ph="SELECT X, Y,... RESULTS" />
+                <marker date="1503854484015" expanded="true" signature="4370:4428" ph="UPDATE RESUL... " />
+                <marker date="1503854484015" expanded="true" signature="4506:4541" ph="SELECT X, Y,... RESULTS" />
               </folding>
             </state>
           </provider>
@@ -128,19 +112,52 @@
       <file leaf-file-name="MainPage.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/MainPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+            <state relative-caret-position="239">
+              <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StartPage.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/StartPage.xhtml">
+      <file leaf-file-name="webSocket.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/webSocket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+            <state relative-caret-position="323">
+              <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="canvas.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/canvas.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+              <folding>
+                <element signature="n#!!block;n#clearForm#0" expanded="false" />
+                <element signature="n#!!block;n#resizeWithoutRadius#0" expanded="false" />
+                <element signature="n#!!block;n#deletePoints#0" expanded="false" />
+                <element signature="n#!!block;n#saveX#0" expanded="false" />
+                <element signature="n#!!block;n#saveR#0" expanded="false" />
+                <element signature="n#!!block;n#canvasFill#0" expanded="false" />
+                <element signature="n#!!block;n#drawCoordinates#0" expanded="false" />
+                <element signature="n#!!block;n#drawShapes#0" expanded="false" />
+                <element signature="n#!!block;n#drawEllipse#0" expanded="false" />
+                <element signature="n#!!block;n#drawTriangle#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebSocketListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/WebSocketListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,10 +182,24 @@
       <find>check</find>
       <find>message</find>
       <find>setX</find>
+      <find>DatabasePointsBean</find>
+      <find>getInside</find>
+      <find>type</find>
+      <find>Socket</find>
+      <find>add</find>
+      <find>sendPoints</find>
+      <find>onResize</find>
+      <find>divCanvas</find>
+      <find>p</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>p</replace>
+      <replace>pointsData</replace>
+      <replace>setIsInside</replace>
+      <replace>PointsData</replace>
+      <replace>getIsInside</replace>
+      <replace>h</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\Java\IAD_lab8\src\main\java\com</dir>
@@ -202,7 +233,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/home.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/DefaultHeader.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/clocks.xhtml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/Clocks.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/sources/css/DefaultFooter.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/sources/css/DefaultHeader.css" />
@@ -223,13 +253,20 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.fxml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ed4d881f-ddb4-4b25-8b76-a9bdf1fb45b7/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Point.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/MainPage.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/parseCommandButtonsX.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/GrowlView.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/FieldsX.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fillX.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/fillX.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/canvas.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/canvasAdapter.js" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Point.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/WebSocketListener.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/xButton.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/PointsData.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/MainPage.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/MainPage.xhtml" />
       </list>
     </option>
@@ -322,8 +359,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -445,6 +482,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="1_0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -604,7 +645,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -612,7 +653,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="DefaultHtmlFileTemplate" value="XHTML File" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.23333333" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -625,11 +666,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\IAD_lab8\src\main\webapp\resources\default\1_0\js" />
       <recent name="D:\Java\IAD_lab8\src\main\webapp\WEB-INF" />
       <recent name="D:\Java\IAD_lab8\src\main\webapp" />
       <recent name="D:\Java\IAD_lab8\src\main\resources" />
       <recent name="D:\Java\IAD_lab8\src\main\webapp\resources" />
-      <recent name="D:\Java\IAD_lab8\src\main\webapp\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Java\IAD_lab8\src\main\webapp\resources\default\1_0\css" />
@@ -1205,7 +1249,9 @@
       <workItem from="1503587499925" duration="9982000" />
       <workItem from="1503605940369" duration="937000" />
       <workItem from="1503652896275" duration="17029000" />
-      <workItem from="1503682774329" duration="4607000" />
+      <workItem from="1503682774329" duration="4698000" />
+      <workItem from="1503772104408" duration="5694000" />
+      <workItem from="1503831130600" duration="17647000" />
     </task>
     <task id="LOCAL-00001" summary="Created crude form within MainPage.xhtml.">
       <created>1503257398766</created>
@@ -1277,11 +1323,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503607210596</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Validation complited">
+      <created>1503694794231</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1503694794231</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154143000" />
+    <option name="totallyTimeSpent" value="177575000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1303,7 +1356,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14447807" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14447807" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33055976" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1316,9 +1369,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26666668" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2957265" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12934947" sideWeight="0.48469388" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19288956" sideWeight="0.48469388" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18532526" sideWeight="0.5153061" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18532526" sideWeight="0.5153061" order="5" side_tool="true" content_ui="tabs" />
@@ -1373,11 +1426,13 @@
     <MESSAGE value="Updated Model &amp; (-semi)Controller, input forms and links" />
     <MESSAGE value="Updated Model &amp; (-semi)Controller&#10;Added crude code to work with DB" />
     <MESSAGE value="Now it works correctly with localhost DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now it works correctly with localhost DB" />
+    <MESSAGE value="Validation complited" />
+    <MESSAGE value="Validation with fields done totally" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validation with fields done totally" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1386,33 +1441,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/HelloWorld.java" />
-    <entry file="uml://MAVEN/ITMO_labs:IAD_lab8:1.0-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>ITMO_labs:IAD_lab8:1.0-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="" y="">ITMO_labs:IAD_lab8:1.0-SNAPSHOT</node>
-            <node x="" y="">junit:junit:jar:3.8.1</node>
-            <node x="" y="">com.sun.faces:jsf-api:jar:2.1.7</node>
-            <node x="" y="">com.sun.faces:jsf-impl:jar:2.1.7</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="118.0" y="85.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/irina.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/HelloWorld.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Message.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/contents.xhtml" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/header.xhtml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/common.xhtml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/footer.xhtml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tutorialspoint.taglib.xml" />
@@ -1470,39 +1498,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml">
-      <provider editor-type-id="com.intellij.javaee.oss.glassfish.editor.GlassfishWebRootProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml">
       <provider editor-type-id="com.intellij.javaee.oss.glassfish.editor.GlassfishWebRootProvider">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ТЗ.png">
-      <provider selected="true" editor-type-id="images">
+      <provider editor-type-id="com.intellij.javaee.oss.glassfish.editor.GlassfishWebRootProvider">
         <state />
       </provider>
     </entry>
@@ -1550,11 +1565,6 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/4f50d1f2/e7c6c475-01f0-4507-a5ea-5305ba450e51/KIRILL.RESULTS">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1563,39 +1573,9 @@
           </column-attributes>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/MainPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="35" />
-          <folding>
-            <element signature="e#314#315#0" expanded="false" />
-            <element signature="e#343#344#0" expanded="false" />
-            <element signature="e#376#377#0" expanded="false" />
-            <element signature="e#402#403#0" expanded="false" />
-            <element signature="e#429#430#0" expanded="false" />
-            <element signature="e#458#459#0" expanded="false" />
-            <element signature="e#491#492#0" expanded="false" />
-            <element signature="e#517#518#0" expanded="false" />
-            <element signature="e#544#545#0" expanded="false" />
-            <element signature="e#573#574#0" expanded="false" />
-            <element signature="e#606#607#0" expanded="false" />
-            <element signature="e#632#633#0" expanded="false" />
-            <element signature="e#668#669#0" expanded="false" />
-            <element signature="e#704#705#0" expanded="false" />
-            <element signature="e#889#890#0" expanded="false" />
-            <element signature="e#927#928#0" expanded="false" />
-            <element signature="e#959#960#0" expanded="false" />
-            <element signature="e#1043#1044#0" expanded="false" />
-          </folding>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1604,20 +1584,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/GrowlView.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/sun/faces/jsf-impl/2.1.7/jsf-impl-2.1.7-sources.jar!/com/sun/faces/config/ConfigureListener.java">
@@ -1628,28 +1607,109 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/FieldsX.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/PointsData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fillX.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/fillX.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/canvas.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ТЗ.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="59">
+          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/WebSocketListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1503694665864" expanded="true" signature="1995:2030" ph="INSERT INTO RESULTS... " />
-            <marker date="1503694665864" expanded="true" signature="2842:2877" ph="SELECT X, Y,... RESULTS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/webSocket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/canvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!block;n#clearForm#0" expanded="false" />
+            <element signature="n#!!block;n#resizeWithoutRadius#0" expanded="false" />
+            <element signature="n#!!block;n#deletePoints#0" expanded="false" />
+            <element signature="n#!!block;n#saveX#0" expanded="false" />
+            <element signature="n#!!block;n#saveR#0" expanded="false" />
+            <element signature="n#!!block;n#canvasFill#0" expanded="false" />
+            <element signature="n#!!block;n#drawCoordinates#0" expanded="false" />
+            <element signature="n#!!block;n#drawShapes#0" expanded="false" />
+            <element signature="n#!!block;n#drawEllipse#0" expanded="false" />
+            <element signature="n#!!block;n#drawTriangle#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/xButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/MainPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/PointsData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="74" column="65" lean-forward="false" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
+          <folding>
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#4135#4144#0" expanded="true" />
+            <element signature="e#4195#4202#0" expanded="true" />
+            <marker date="1503854484015" expanded="true" signature="1994:2029" ph="INSERT INTO RESULTS... " />
+            <marker date="1503854484015" expanded="true" signature="2841:2876" ph="SELECT X, Y,... RESULTS" />
+            <marker date="1503854484015" expanded="true" signature="4370:4428" ph="UPDATE RESUL... " />
+            <marker date="1503854484015" expanded="true" signature="4506:4541" ph="SELECT X, Y,... RESULTS" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/MainPage.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+        <state relative-caret-position="129">
+          <caret line="91" column="22" lean-forward="true" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
           <folding>
-            <element signature="n#div#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#h:body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1503694737816" expanded="true" signature="1741:1880" ph="{...}" />
-            <marker date="1503694737816" expanded="true" signature="2227:2366" ph="{...}" />
-            <marker date="1503694737816" expanded="true" signature="2996:3135" ph="{...}" />
+            <marker date="1503856257583" expanded="true" signature="2032:2171" ph="{...}" />
+            <marker date="1503856257583" expanded="true" signature="2541:2680" ph="{...}" />
+            <marker date="1503856257583" expanded="true" signature="3310:3449" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1699,7 +1759,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.23333333" />
               </list>
             </option>
           </splitter-proportions>
@@ -1711,7 +1771,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.23333333" />
               </list>
             </option>
           </splitter-proportions>
@@ -1743,7 +1803,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.sun.faces:jsf-impl:2.1.7</last-edited>
+          <last-edited>Maven: org.primefaces:primefaces:5.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

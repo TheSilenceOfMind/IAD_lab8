@@ -12,45 +12,45 @@
 <h:head>
     <title>MainPage</title>
     <h:outputStylesheet library="default" name="css/MainPage.css"/>
+    <script type="text/javascript" src="resources/default/1_0/js/canvas.js"/>
+    <script type="text/javascript" src="resources/default/1_0/js/webSocket.js"/>
+    <script type="text/javascript" src="resources/default/1_0/js/xButton.js"/>
 </h:head>
 
-<h:body>
+<h:body onload="init()">
     <div id="header">
         Вариант: 105<br/>
     </div>
 
     <div id="content">
-        <h:form id="inputForm">
-
+        <h:form id="buttonsForm">
             <!-- TODO : fix it, if we haven't chosen value X, the message should appear -->
             <h3>Выберите X: </h3>
-            <!--
             <ui:repeat value="#{num.numbers}" var="i">
-                <p:commandButton
-                        id="CommandButton#{i}"
-                        type="submit"
-                        value="#{i}"
-                        action="#{PointsData.setX(i)}"
-                        ajax="true"
-                        update="valueX"
-                />
+                <h:commandButton value="#{i}"
+                                 id="comB#{i}"
+                                 action="#{PointsData.setX(i)}"
+                >
+                    <f:ajax action="#{PointsData.setX(i)}"
+                            render=":inputForm:valueX :inputForm:valueXHidden"/>
+                </h:commandButton>
             </ui:repeat>
-            -->
-            <p:commandButton
-                    id="CommandButton1"
-                    type="submit"
-                    value="1"
-                    action="#{PointsData.setX(1)}"
-                    ajax="true"
-                    update="valueX messageForX"
-            />
-            <h:inputHidden id="valueX" value="#{PointsData.getX()}" required="true" requiredMessage="Необходимо выбрать значение X!"/>
-            <h:message for="valueX" id="messageForX"
-                       style="color: red;
+        </h:form>
+
+        <h:form id="inputForm">
+            <div id="labelX">
+                <h:outputText id="X" value="Значение X:"/>
+                <h:outputLabel for="X" id="valueX" value="#{PointsData.getX()}"/>
+                <h:inputHidden id="valueXHidden" value="#{PointsData.x}" validatorMessage="Необходимо выбрать значение X!">
+                    <f:validateLength minimum="1"/>
+                </h:inputHidden>
+                <h:message for="valueXHidden" id="aaaa"
+                           style="color: red;
                        font-size: 15pt;
                        font-family: fantasy;
                        padding-left: 10px;"
-            />
+                />
+            </div>
 
             <h3>Введите Y: </h3>
             <h:inputText id="valueY" value="#{PointsData.y}" requiredMessage="Необходимо ввести значение Y!" required="true">
@@ -85,6 +85,14 @@
                              style="height: 60px; width: 120px;"
             />
         </h:form>
+
+        <div class="container">
+            <div id="canvasContainer" class="left-block">
+                <canvas class="brd" id="graph" onclick="setPoint(event)"
+                        style="background: white;" width="300" height="300">
+                </canvas>
+            </div>
+        </div>
 
 
         <div id="div-res-table">

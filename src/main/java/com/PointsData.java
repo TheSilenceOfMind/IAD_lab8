@@ -69,7 +69,7 @@ public class PointsData implements Serializable {
         return dbConnection;
     }
 
-    private void addPointToDB(Point p) throws Exception {
+    public void addPointToDB(Point p) throws Exception {
         try {
             Connection conn = getDbConnection();
             PreparedStatement statement = conn.prepareStatement("INSERT INTO RESULTS VALUES(?,?,?,?)");
@@ -124,6 +124,40 @@ public class PointsData implements Serializable {
             System.err.println("Exception occured in method parseRequestAndUpdateDB" + e.getMessage());
         }
         return "toMainPage";
+    }
+
+    public ArrayList<Boolean> changeRadius(float r) {
+        ArrayList<Boolean> listOfInsideInformation = new ArrayList<Boolean>();
+        ArrayList<Point> points = new ArrayList<Point>();
+        try {
+            float x, y;
+            Connection connection = getDbConnection();
+            PreparedStatement statement = connection.prepareStatement("UPDATE RESULTS SET R=(?), INSIDE=(?) WHERE X=(?) AND Y=(?)");
+            PreparedStatement statementGet = connection.prepareStatement("SELECT X, Y, R, INSIDE FROM RESULTS");
+            ResultSet rs = statementGet.executeQuery();
+            while (rs.next()) {
+                Point point = new Point(rs.getFloat(1), rs.getFloat(2), rs.getFloat(3), rs.getInt(4) != 0);
+                points.add(point);
+            }
+            for (int i = 0; i <= points.size(); i++) {
+                x = points.get(i).getX();
+                y = points.get(i).getY();
+                listOfInsideInformation.add(checkIsInside(x, y, r));
+                statement.setFloat(1, r);
+                statement.setInt(2, listOfInsideInformation.get(i) ? 1 : 0);
+                statement.setFloat(3, x);
+                statement.setFloat(4, y);
+                statement.executeUpdate();
+            }
+            System.out.println("Sending DB update: " + statement);
+            statement.close();
+            connection.close();
+            dbConnection = null;
+        } catch (SQLException var4) {
+            System.err.println("Error: SQL exception " + var4.getMessage());
+            var4.printStackTrace();
+        }
+        return listOfInsideInformation;
     }
 
 }

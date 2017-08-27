@@ -6,6 +6,8 @@ public class Point {
     private float r;
     private boolean isInside;
 
+    public Point() {}
+
     public Point(float x, float y, float r, boolean inside) {
         this.x = x;
         this.y = y;
