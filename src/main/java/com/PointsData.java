@@ -1,5 +1,6 @@
 package com;
 
+import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import java.io.Serializable;
@@ -16,10 +17,13 @@ public class PointsData implements Serializable {
     ArrayList<Point> points;
     private static Connection dbConnection = null;
 
-    private static int count = 0;
-
     public PointsData() {
 
+    }
+
+    @PostConstruct
+    public void init() {
+        r = "3";
     }
 
     public String getX() {
@@ -27,6 +31,7 @@ public class PointsData implements Serializable {
     }
 
     public void setX(String x) {
+        System.out.println(x);
         this.x = x;
     }
 
@@ -35,7 +40,7 @@ public class PointsData implements Serializable {
     }
 
     public void setY(String y) {
-        this.y = y;
+        this.y = y.replace(",", ".");
     }
 
     public String getR() {
@@ -47,9 +52,9 @@ public class PointsData implements Serializable {
     }
 
     public boolean checkIsInside(double x, double y, double r) {
-        return  (x >= 0 && y >= 0 && (x*x + y*y <= r*r / 4)) ||
+        return  ((x >= 0 && y >= 0 && (x*x + y*y <= r*r / 4)) ||
                 (x <= 0 && y >= 0 && (y <= r / 2 + x / 2)) ||
-                (x >= 0 && y <= 0 && y >= -r && x <= r / 2);
+                (x >= 0 && y <= 0 && y >= -r && x <= r / 2));
     }
 
     private Connection getDbConnection() {
@@ -106,7 +111,6 @@ public class PointsData implements Serializable {
         } finally {
             dbConnection = null;
         }
-        Collections.reverse(points);
         return points;
     }
 
@@ -116,12 +120,12 @@ public class PointsData implements Serializable {
             float yy = Float.parseFloat(getY());
             float rr = Float.parseFloat(getR());
             Point point = new Point(xx, yy, rr, checkIsInside((double) xx, (double) yy, (double) rr));
-            r = null;
-            y = null;
-            x = null;
+            x = "";
+            y = "";
+            r = "3";
             addPointToDB(point);
         } catch (Exception e) {
-            System.err.println("Exception occured in method parseRequestAndUpdateDB" + e.getMessage());
+            System.err.println("Exception occured in method parseRequestAndUpdateDB: " + e.getMessage());
         }
         return "toMainPage";
     }
@@ -139,7 +143,7 @@ public class PointsData implements Serializable {
                 Point point = new Point(rs.getFloat(1), rs.getFloat(2), rs.getFloat(3), rs.getInt(4) != 0);
                 points.add(point);
             }
-            for (int i = 0; i <= points.size(); i++) {
+            for (int i = 0; i < points.size(); i++) {
                 x = points.get(i).getX();
                 y = points.get(i).getY();
                 listOfInsideInformation.add(checkIsInside(x, y, r));

@@ -40,5 +40,6 @@ public class Y_Validation implements Validator {
             msg.setSeverity(FacesMessage.SEVERITY_ERROR);
             throw new ValidatorException(msg);
         }
+
     }
 }

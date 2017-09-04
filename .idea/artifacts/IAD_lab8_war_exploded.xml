@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="IAD_lab8:war exploded">
-    <output-path>$PROJECT_DIR$/target/IAD_lab8</output-path>
+    <output-path>$PROJECT_DIR$/target/lab8</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -12,10 +12,24 @@
           <element id="library" level="project" name="Maven: org.primefaces:primefaces:5.3" />
           <element id="library" level="project" name="Maven: javax.websocket:javax.websocket-api:1.1" />
           <element id="library" level="project" name="Maven: javax.json:javax.json-api:1.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven.plugins:maven-deploy-plugin:2.7" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-api:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-project:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-settings:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-profile:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-artifact-manager:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-repository-metadata:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven.wagon:wagon-provider-api:1.0-beta-2" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-registry:2.0.6" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1" />
+          <element id="library" level="project" name="Maven: classworlds:classworlds:1.1-alpha-2" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-model:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-artifact:2.0.6" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-utils:1.5.6" />
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/IAD_lab8/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/lab8/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="IAD_lab8/web/Web" />
     </root>

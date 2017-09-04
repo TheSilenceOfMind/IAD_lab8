@@ -16,7 +16,6 @@
 
 #inputForm {
     font-size : 11pt;
-    text-align: left;
 }
 
 #linkForm {
@@ -60,7 +59,17 @@
 }
 
 #labelX {
-    font-family : sans-serif;
+    font-family : monospace;
     padding : 17pt;
     font-size : 15pt;
+}
+
+.err_msg {
+    color: red;
+    font-size: 17pt;
+    font-family: initial;
+}
+
+.small-button {
+    font-size: 11pt;
 }

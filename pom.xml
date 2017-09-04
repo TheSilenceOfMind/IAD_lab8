@@ -38,10 +38,10 @@
 
     <!-- https://mvnrepository.com/artifact/javax.websocket/javax.websocket-api -->
     <dependency>
-      <groupId>javax.websocket</groupId>
-      <artifactId>javax.websocket-api</artifactId>
-      <version>1.1</version>
-    </dependency>
+    <groupId>javax.websocket</groupId>
+    <artifactId>javax.websocket-api</artifactId>
+    <version>1.1</version>
+  </dependency>
 
     <!-- https://mvnrepository.com/artifact/javax.json/javax.json-api -->
     <dependency>
@@ -50,8 +50,67 @@
       <version>1.0</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-deploy-plugin</artifactId>
+      <version>2.7</version>
+    </dependency>
+
   </dependencies>
   <build>
-    <finalName>IAD_lab8</finalName>
+    <finalName>lab8</finalName>
+    <plugins>
+
+      <plugin>
+        <groupId>org.glassfish.maven.plugin</groupId>
+        <artifactId>maven-glassfish-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
+          <glassfishDirectory>${local.glassfish.home}</glassfishDirectory>
+          <user>admin</user>
+          <passwordFile>${local.glassfish.passfile}</passwordFile>
+          <domain>
+            <name>domain5</name>
+            <httpPort>8080</httpPort>
+            <adminPort>4948</adminPort>
+          </domain>
+          <components>
+            <component>
+              <name>${project.artifactId}</name>
+              <artifact>target/${project.build.finalName}.war</artifact>
+            </component>
+          </components>
+          <debug>true</debug>
+          <terse>false</terse>
+          <echo>true</echo>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <encoding>${project.build.sourceEncoding}</encoding>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <encoding>${project.build.sourceEncoding}</encoding>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+
+    </plugins>
   </build>
 </project>

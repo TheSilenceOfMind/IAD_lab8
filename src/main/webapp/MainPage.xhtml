@@ -5,98 +5,89 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p = "http://primefaces.org/ui"
-      xmlns:c = "http://java.sun.com/jsp/jstl/core"
-      xmlns:ui = "http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 >
 <h:head>
     <title>MainPage</title>
     <h:outputStylesheet library="default" name="css/MainPage.css"/>
     <script type="text/javascript" src="resources/default/1_0/js/canvas.js"/>
     <script type="text/javascript" src="resources/default/1_0/js/webSocket.js"/>
-    <script type="text/javascript" src="resources/default/1_0/js/xButton.js"/>
 </h:head>
 
-<h:body onload="init()">
+<h:body onload="reloadPage()">
+
+    <!--<script>-->
+        <!--window.alert = function () {-->
+        <!--}-->
+    <!--</script>-->
     <div id="header">
         Вариант: 105<br/>
     </div>
 
     <div id="content">
-        <h:form id="buttonsForm">
-            <!-- TODO : fix it, if we haven't chosen value X, the message should appear -->
-            <h3>Выберите X: </h3>
-            <ui:repeat value="#{num.numbers}" var="i">
-                <h:commandButton value="#{i}"
-                                 id="comB#{i}"
-                                 action="#{PointsData.setX(i)}"
-                >
-                    <f:ajax action="#{PointsData.setX(i)}"
-                            render=":inputForm:valueX :inputForm:valueXHidden"/>
-                </h:commandButton>
-            </ui:repeat>
-        </h:form>
+        <table width="100%">
+            <tr>
+                <th align="left">
+                    <h:form id="buttonsForm">
+                        <h3>Выберите X: </h3>
+                        <ui:repeat value="#{num.numbers}" var="i">
+                            <p:commandButton value="#{i}"
+                                             action="#{PointsData.setX(i)}"
+                                             update=":inputForm:valueX :inputForm:valueXHidden"
+                                             oncomplete="document.getElementById('inputForm:valueXHidden').value = #{i}"
+                                             styleClass="small-button"
+                            />
+                        </ui:repeat>
+                    </h:form>
 
-        <h:form id="inputForm">
-            <div id="labelX">
-                <h:outputText id="X" value="Значение X:"/>
-                <h:outputLabel for="X" id="valueX" value="#{PointsData.getX()}"/>
-                <h:inputHidden id="valueXHidden" value="#{PointsData.x}" validatorMessage="Необходимо выбрать значение X!">
-                    <f:validateLength minimum="1"/>
-                </h:inputHidden>
-                <h:message for="valueXHidden" id="aaaa"
-                           style="color: red;
-                       font-size: 15pt;
-                       font-family: fantasy;
-                       padding-left: 10px;"
-                />
-            </div>
+                    <h:form id="inputForm">
+                        <div id="labelX">
+                            <h:outputText id="X" value="Текущее X:"/>
+                            <h:outputText id="valueX" value="#{PointsData.getX()}" />
+                            <h:inputHidden id="valueXHidden" value="100" validatorMessage="Необходимо выбрать значение X!">
+                                <f:validateLength minimum="1" maximum="2"/>
+                            </h:inputHidden>
+                            <h:message for="valueXHidden" id="aaaa" styleClass="err_msg"/>
+                        </div>
 
-            <h3>Введите Y: </h3>
-            <h:inputText id="valueY" value="#{PointsData.y}" requiredMessage="Необходимо ввести значение Y!" required="true">
-                <f:validator validatorId="inputValidator"/>
-            </h:inputText>
-            <h:message for="valueY" id="messageForY"
-                       style="color: red;
-                       font-size: 15pt;
-                       font-family: fantasy;
-                       padding-left: 10px;"
-            />
+                        <h3>Введите Y: </h3>
+                        <h:inputText id="valueY" value="#{PointsData.y}" requiredMessage="Необходимо ввести значение Y!" required="true">
+                            <f:validator validatorId="inputValidator"/>
+                        </h:inputText>
+                        <h:message for="valueY" id="messageForY" styleClass="err_msg"/>
 
-            <h3>Выберите радиус: </h3>
-            <h:selectOneRadio value="#{PointsData.r}" onchange="saveR()" id="valueR" required="true" requiredMessage="Необходимо выбрать значение радиуса!" >
-                <f:selectItem itemValue="1" itemLabel="1"/>
-                <f:selectItem itemValue="2" itemLabel="2"/>
-                <f:selectItem itemValue="3" itemLabel="3"/>
-                <f:selectItem itemValue="4" itemLabel="4"/>
-                <f:selectItem itemValue="5" itemLabel="5"/>
-            </h:selectOneRadio>
-            <h:message for="valueR" id="messageForR"
-                       style="color: red;
-                       font-size: 15pt;
-                       font-family: fantasy;
-                       padding-left: 10px;"
-            />
-            <br/>
+                        <h3>Выберите радиус: </h3>
+                        <h:selectOneRadio value="#{PointsData.r}" onchange="saveRAndRepaint(value)" id="radioButtons" required="true" requiredMessage="Необходимо выбрать значение радиуса!" >
+                            <f:selectItem itemValue="1" itemLabel="1"/>
+                            <f:selectItem itemValue="2" itemLabel="2"/>
+                            <f:selectItem itemValue="3" itemLabel="3"/>
+                            <f:selectItem itemValue="4" itemLabel="4"/>
+                            <f:selectItem itemValue="5" itemLabel="5"/>
+                            <p:ajax delay="500" update=":Table:resTable"/>
+                        </h:selectOneRadio>
+                        <h:inputHidden id="valueR" value="3"/>
+                        <h:message for="radioButtons" id="messageForR" styleClass="err_msg"/>
+                        <br/>
 
-            <p:commandButton value="Добавить точку"
-                             ajax="false"
-                             action="#{PointsData.parseRequestAndUpdateDB}"
-                             style="height: 60px; width: 120px;"
-            />
-        </h:form>
-
-        <div class="container">
-            <div id="canvasContainer" class="left-block">
-                <canvas class="brd" id="graph" onclick="setPoint(event)"
-                        style="background: white;" width="300" height="300">
-                </canvas>
-            </div>
-        </div>
-
-
+                        <p:commandButton value="Добавить точку"
+                                         ajax="false"
+                                         action="#{PointsData.parseRequestAndUpdateDB}"
+                                         style="height: 60px; width: 120px;"
+                        />
+                    </h:form>
+                </th>
+                <th align="right">
+                    <canvas class="brd" id="graph" onclick="clickPoint(event)"
+                            width="400px"
+                            height="400px"
+                            style="background: white; ">
+                    </canvas>
+                </th>
+            </tr>
+        </table>
         <div id="div-res-table">
-            <h:form>
+            <h:form id="Table">
                 <h:dataTable value="#{PointsData.points}"
                              var="p"
                              id="resTable"
@@ -105,34 +96,31 @@
                              headerClass="res-table-header"
                              rowClasses="res-table-odd-row,res-table-even-row"
                 >
-                    <c:if test="#{PointsData.points.size() > 0}">
-                        <h:column>
-                            <f:facet name="header">X</f:facet>
-                            <h:outputText value="#{p.getX()}">
-                                <f:convertNumber pattern="#0.###"/>
-                            </h:outputText>
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">Y</f:facet>
-                            <h:outputText value="#{p.getY()}">
-                                <f:convertNumber pattern="#0.###"/>
-                            </h:outputText>
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">R</f:facet>
-                            <h:outputText value="#{p.getR()}">
-                                <f:convertNumber pattern="#0.###"/>
-                            </h:outputText>
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">isInside</f:facet>
-                            #{p.getIsInsideString()}
-                        </h:column>
-                    </c:if>
+                    <h:column>
+                        <f:facet name="header">X</f:facet>
+                        <h:outputText value="#{p.getX()}">
+                            <f:convertNumber pattern="#0.##"/>
+                        </h:outputText>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Y</f:facet>
+                        <h:outputText value="#{p.getY()}">
+                            <f:convertNumber pattern="#0.##"/>
+                        </h:outputText>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">R</f:facet>
+                        <h:outputText value="#{p.getR()}">
+                            <f:convertNumber pattern="#0.##"/>
+                        </h:outputText>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">isInside</f:facet>
+                        #{p.getIsInsideString()}
+                    </h:column>
                 </h:dataTable>
             </h:form>
         </div>
-
 
         <h:form id="linkForm">
             <h:commandLink action="toStartPage">КЛИКНИ НА МЕНЯ, И ТЫ ПОПАДЕШЬ НА СТАРТОВУЮ СТРАНИЦУ!!!</h:commandLink>

@@ -6,21 +6,29 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1865868-3426-4451-9071-b7b00db00757" name="Default" comment="Validation with fields done totally">
+    <list default="true" id="e1865868-3426-4451-9071-b7b00db00757" name="Default" comment="All done. List of changes:&#10;1) added JSF validation of all fields;&#10;2) added canvas to MainPage;&#10;3) created data-handling way within JS-code to transfer data with DB through java class using JSON-format (used to change data using user click on canvas);&#10;4) fixed some bugs.">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_json_javax_json_api_1_0.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_1.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/WebSocketListener.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/canvas.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/webSocket.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/IAD_lab8/MainPage.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/IAD_lab8/StartPage.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/IAD_lab8/WEB-INF/classes/com/TimeBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/IAD_lab8/WEB-INF/classes/ТЗ.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/IAD_lab8/WEB-INF/web.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/TimeBean.class" afterPath="$PROJECT_DIR$/target/classes/com/TimeBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/IAD_lab8_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/IAD_lab8_war.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/IAD_lab8_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/IAD_lab8_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IAD_lab8.iml" afterPath="$PROJECT_DIR$/IAD_lab8.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Point.java" afterPath="$PROJECT_DIR$/src/main/java/com/Point.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/PointsData.java" afterPath="$PROJECT_DIR$/src/main/java/com/PointsData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/validation/Y_Validation.java" afterPath="$PROJECT_DIR$/src/main/java/com/validation/Y_Validation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/MainPage.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/MainPage.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/MainPage.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/MainPage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IAD_lab8/MainPage.xhtml" afterPath="$PROJECT_DIR$/target/IAD_lab8/MainPage.xhtml" />
     </list>
     <list id="b257eb1f-aba2-462b-8b44-76f399ede939" name="Using of templates rejected, template and stylesheet for template have been removed." comment="Using of templates rejected, template and stylesheet for template have been removed." />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -78,32 +86,10 @@
       <file leaf-file-name="MainPage.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/MainPage.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="91" column="22" lean-forward="true" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+            <state relative-caret-position="114">
+              <caret line="80" column="21" lean-forward="false" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
               <folding>
-                <element signature="n#div#2;n#h:body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1503856257583" expanded="true" signature="2032:2171" ph="{...}" />
-                <marker date="1503856257583" expanded="true" signature="2541:2680" ph="{...}" />
-                <marker date="1503856257583" expanded="true" signature="3310:3449" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PointsData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/PointsData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="74" column="65" lean-forward="false" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
-              <folding>
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#4135#4144#0" expanded="true" />
-                <element signature="e#4195#4202#0" expanded="true" />
-                <marker date="1503854484015" expanded="true" signature="1994:2029" ph="INSERT INTO RESULTS... " />
-                <marker date="1503854484015" expanded="true" signature="2841:2876" ph="SELECT X, Y,... RESULTS" />
-                <marker date="1503854484015" expanded="true" signature="4370:4428" ph="UPDATE RESUL... " />
-                <marker date="1503854484015" expanded="true" signature="4506:4541" ph="SELECT X, Y,... RESULTS" />
+                <marker date="1504485915911" expanded="true" signature="1926:2233" ph="..." />
               </folding>
             </state>
           </provider>
@@ -112,8 +98,56 @@
       <file leaf-file-name="MainPage.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/MainPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+            <state relative-caret-position="85">
+              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebSocketListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/WebSocketListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="84" column="4" lean-forward="false" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+              <folding>
+                <element signature="e#3182#3183#0" expanded="true" />
+                <element signature="e#3227#3228#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PointsData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/PointsData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="139" column="74" lean-forward="false" selection-start-line="139" selection-start-column="74" selection-end-line="139" selection-end-column="74" />
+              <folding>
+                <marker date="1504478525718" expanded="true" signature="2117:2152" ph="INSERT INTO RESULTS... " />
+                <marker date="1504478525718" expanded="true" signature="2964:2999" ph="SELECT X, Y,... RESULTS" />
+                <marker date="1504478525718" expanded="true" signature="4453:4511" ph="UPDATE RESUL... " />
+                <marker date="1504478525718" expanded="true" signature="4589:4624" ph="SELECT X, Y,... RESULTS" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="100" column="22" lean-forward="false" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Y_Validation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/validation/Y_Validation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -122,8 +156,8 @@
       <file leaf-file-name="webSocket.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/webSocket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+            <state relative-caret-position="952">
+              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -132,31 +166,18 @@
       <file leaf-file-name="canvas.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/canvas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+            <state relative-caret-position="-24">
+              <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding>
-                <element signature="n#!!block;n#clearForm#0" expanded="false" />
-                <element signature="n#!!block;n#resizeWithoutRadius#0" expanded="false" />
-                <element signature="n#!!block;n#deletePoints#0" expanded="false" />
-                <element signature="n#!!block;n#saveX#0" expanded="false" />
-                <element signature="n#!!block;n#saveR#0" expanded="false" />
-                <element signature="n#!!block;n#canvasFill#0" expanded="false" />
-                <element signature="n#!!block;n#drawCoordinates#0" expanded="false" />
-                <element signature="n#!!block;n#drawShapes#0" expanded="false" />
-                <element signature="n#!!block;n#drawEllipse#0" expanded="false" />
-                <element signature="n#!!block;n#drawTriangle#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSocketListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/WebSocketListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#!!block;n#drawBackground#0" expanded="false" />
+                <element signature="n#!!block;n#drawAxis#0" expanded="false" />
+                <element signature="n#!!block;n#drawFigures#0" expanded="false" />
+                <element signature="n#!!block;n#clickPoint#0" expanded="false" />
+                <element signature="n#!!block;n#addPoint#0" expanded="false" />
+                <element signature="n#!!block;n#drawPoint#0" expanded="false" />
+                <element signature="n#!!block;n#reloadPoints#0" expanded="false" />
+                <marker date="1504485694544" expanded="true" signature="110:570" ph="..." />
+                <marker date="1504485694544" expanded="true" signature="121:570" ph="..." />
               </folding>
             </state>
           </provider>
@@ -178,28 +199,48 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>point</find>
-      <find>check</find>
-      <find>message</find>
-      <find>setX</find>
-      <find>DatabasePointsBean</find>
-      <find>getInside</find>
-      <find>type</find>
-      <find>Socket</find>
-      <find>add</find>
-      <find>sendPoints</find>
+      <find>canvasPoints</find>
+      <find>saveR</find>
       <find>onResize</find>
-      <find>divCanvas</find>
-      <find>p</find>
+      <find>drawPoi</find>
+      <find>resizeWithoutRadius</find>
+      <find>canvasFill</find>
+      <find>G</find>
+      <find>setPoint</find>
+      <find>draw</find>
+      <find>drawPoint</find>
+      <find>updateGraph</find>
+      <find>height</find>
+      <find>ind</find>
+      <find>size</find>
+      <find>alert</find>
+      <find>checkIsInside</find>
+      <find>document.getElementById(&quot;inputForm:valueR&quot;).value</find>
+      <find>drawBa</find>
+      <find>R = R;</find>
+      <find>r:</find>
+      <find>Change radius and draw points</find>
+      <find>.r</find>
+      <find>data.r</find>
+      <find>valueR</find>
+      <find>getPo</find>
+      <find>Sending DB update</find>
+      <find>h</find>
+      <find>Get points</find>
+      <find>Get points and draw</find>
+      <find>setX</find>
     </findStrings>
     <replaceStrings>
       <replace />
-      <replace>p</replace>
       <replace>pointsData</replace>
       <replace>setIsInside</replace>
       <replace>PointsData</replace>
       <replace>getIsInside</replace>
       <replace>h</replace>
+      <replace>canvas</replace>
+      <replace>R:</replace>
+      <replace>data.R</replace>
+      <replace>p</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\Java\IAD_lab8\src\main\java\com</dir>
@@ -246,7 +287,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/StartPage.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/TimeBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/LayoutNumbers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/validation/Y_Validation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ControllerPointsData.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/StartPage.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml.tld" />
@@ -259,15 +299,18 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/FieldsX.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/fillX.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/fillX.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/canvas.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/canvasAdapter.js" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/Point.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/WebSocketListener.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/xButton.js" />
+        <option value="$PROJECT_DIR$/target/classes/com/WebSocketListener.class" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/validation/Y_Validation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/PointsData.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/MainPage.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/canvas.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/MainPage.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/WebSocketListener.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/webSocket.js" />
       </list>
     </option>
   </component>
@@ -359,7 +402,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -645,7 +688,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -665,20 +708,23 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle&#10;DDL Data Source" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\IAD_lab8\src\main\webapp\resources\default\1_0\css" />
+      <recent name="D:\Java\IAD_lab8\src\main\webapp\resources\default\1_0\img" />
+      <recent name="D:\Java\IAD_lab8\src\main\webapp" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Java\IAD_lab8\src\main\webapp\resources\default\1_0\js" />
       <recent name="D:\Java\IAD_lab8\src\main\webapp\WEB-INF" />
       <recent name="D:\Java\IAD_lab8\src\main\webapp" />
       <recent name="D:\Java\IAD_lab8\src\main\resources" />
       <recent name="D:\Java\IAD_lab8\src\main\webapp\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Java\IAD_lab8\src\main\webapp\resources\default\1_0\css" />
-      <recent name="D:\Java\IAD_lab8\src\main\webapp\resources\default\1_0\img" />
-      <recent name="D:\Java\IAD_lab8\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1143,7 +1189,7 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 3.1.2.1-SNAPSHOT" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration default="false" name="Unnamed" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.1.2" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
@@ -1152,11 +1198,11 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="DOMAIN" value="d1" />
+        <option name="DOMAIN" value="d9999" />
         <option name="PRESERVE" value="false" />
         <option name="COMPATIBILITY" value="false" />
         <option name="VIRTUAL_SERVER" />
-        <option name="USERNAME" value="admin" />
+        <option name="USERNAME" value="" />
         <option name="PASSWORD" value="" />
       </server-settings>
       <predefined_log_file id="GlassFish" enabled="true" />
@@ -1210,6 +1256,7 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method>
+        <option name="Make" enabled="false" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="IAD_lab8:war exploded" />
         </option>
@@ -1251,7 +1298,13 @@
       <workItem from="1503652896275" duration="17029000" />
       <workItem from="1503682774329" duration="4698000" />
       <workItem from="1503772104408" duration="5694000" />
-      <workItem from="1503831130600" duration="17647000" />
+      <workItem from="1503831130600" duration="28800000" />
+      <workItem from="1503930789345" duration="6700000" />
+      <workItem from="1504191152229" duration="7500000" />
+      <workItem from="1504275180111" duration="15891000" />
+      <workItem from="1504338315562" duration="27717000" />
+      <workItem from="1504443457542" duration="20842000" />
+      <workItem from="1504477841146" duration="8867000" />
     </task>
     <task id="LOCAL-00001" summary="Created crude form within MainPage.xhtml.">
       <created>1503257398766</created>
@@ -1330,11 +1383,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503694794231</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Validation with fields done totally">
+      <created>1503856316964</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1503856316964</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177575000" />
+    <option name="totallyTimeSpent" value="276245000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1350,29 +1410,30 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46837607" sideWeight="0.5030257" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.40090773" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.49092284" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4077156" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14447807" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22692889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33055976" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5990923" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2957265" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19288956" sideWeight="0.48469388" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991454" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36923078" sideWeight="0.49092284" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.49394855" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18683812" sideWeight="0.48469388" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18532526" sideWeight="0.5153061" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18532526" sideWeight="0.5153061" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1380,8 +1441,42 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.40090773" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.49092284" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4077156" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22692889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33055976" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5990923" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36923078" sideWeight="0.49092284" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.49394855" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18683812" sideWeight="0.48469388" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18532526" sideWeight="0.5153061" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18532526" sideWeight="0.5153061" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -1428,11 +1523,12 @@
     <MESSAGE value="Now it works correctly with localhost DB" />
     <MESSAGE value="Validation complited" />
     <MESSAGE value="Validation with fields done totally" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validation with fields done totally" />
+    <MESSAGE value="All done. List of changes:&#10;1) added JSF validation of all fields;&#10;2) added canvas to MainPage;&#10;3) created data-handling way within JS-code to transfer data with DB through java class using JSON-format (used to change data using user click on canvas);&#10;4) fixed some bugs." />
+    <option name="LAST_COMMIT_MESSAGE" value="All done. List of changes:&#10;1) added JSF validation of all fields;&#10;2) added canvas to MainPage;&#10;3) created data-handling way within JS-code to transfer data with DB through java class using JSON-format (used to change data using user click on canvas);&#10;4) fixed some bugs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1441,9 +1537,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/common.xhtml" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/footer.xhtml" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tutorialspoint.taglib.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/com/tutorialspoint/buttonPanel.xhtml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/page2.xhtml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/page1.xhtml" />
@@ -1475,13 +1568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/validation/Y_Validation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="38" column="51" lean-forward="false" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/TimeBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1490,14 +1576,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ControllerPointsData.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1510,17 +1588,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.oss.glassfish.editor.GlassfishWebRootProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ed4d881f-ddb4-4b25-8b76-a9bdf1fb45b7/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1553,52 +1620,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/StartPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/4f50d1f2/e7c6c475-01f0-4507-a5ea-5305ba450e51/KIRILL.RESULTS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ROWID" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/parseCommandButtonsX.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/StartPage.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/GrowlView.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/sun/faces/jsf-impl/2.1.7/jsf-impl-2.1.7-sources.jar!/com/sun/faces/config/ConfigureListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1610,19 +1636,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fillX.js" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/fillX.js" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/canvas.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ТЗ.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Point.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1631,85 +1644,173 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/WebSocketListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/xButton.js" />
+    <entry file="file://$PROJECT_DIR$/target/classes/com/WebSocketListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1655">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/webSocket.js">
+    <entry file="file://$PROJECT_DIR$/IAD_lab8.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/4f50d1f2/e7c6c475-01f0-4507-a5ea-5305ba450e51/KIRILL.RESULTS">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="ROWID" enabled="false" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="744" column="0" lean-forward="false" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ТЗ.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.oss.glassfish.editor.GlassfishWebRootProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/StartPage.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/StartPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/MainPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/canvas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        <state relative-caret-position="-24">
+          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#clearForm#0" expanded="false" />
-            <element signature="n#!!block;n#resizeWithoutRadius#0" expanded="false" />
-            <element signature="n#!!block;n#deletePoints#0" expanded="false" />
-            <element signature="n#!!block;n#saveX#0" expanded="false" />
-            <element signature="n#!!block;n#saveR#0" expanded="false" />
-            <element signature="n#!!block;n#canvasFill#0" expanded="false" />
-            <element signature="n#!!block;n#drawCoordinates#0" expanded="false" />
-            <element signature="n#!!block;n#drawShapes#0" expanded="false" />
-            <element signature="n#!!block;n#drawEllipse#0" expanded="false" />
-            <element signature="n#!!block;n#drawTriangle#0" expanded="false" />
+            <element signature="n#!!block;n#drawBackground#0" expanded="false" />
+            <element signature="n#!!block;n#drawAxis#0" expanded="false" />
+            <element signature="n#!!block;n#drawFigures#0" expanded="false" />
+            <element signature="n#!!block;n#clickPoint#0" expanded="false" />
+            <element signature="n#!!block;n#addPoint#0" expanded="false" />
+            <element signature="n#!!block;n#drawPoint#0" expanded="false" />
+            <element signature="n#!!block;n#reloadPoints#0" expanded="false" />
+            <marker date="1504485694544" expanded="true" signature="110:570" ph="..." />
+            <marker date="1504485694544" expanded="true" signature="121:570" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/xButton.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/js/webSocket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="952">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/default/1_0/css/MainPage.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/validation/Y_Validation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        <state relative-caret-position="194">
+          <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/WebSocketListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="84" column="4" lean-forward="false" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+          <folding>
+            <element signature="e#3182#3183#0" expanded="true" />
+            <element signature="e#3227#3228#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/PointsData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="74" column="65" lean-forward="false" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
+        <state relative-caret-position="104">
+          <caret line="139" column="74" lean-forward="false" selection-start-line="139" selection-start-column="74" selection-end-line="139" selection-end-column="74" />
           <folding>
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#4135#4144#0" expanded="true" />
-            <element signature="e#4195#4202#0" expanded="true" />
-            <marker date="1503854484015" expanded="true" signature="1994:2029" ph="INSERT INTO RESULTS... " />
-            <marker date="1503854484015" expanded="true" signature="2841:2876" ph="SELECT X, Y,... RESULTS" />
-            <marker date="1503854484015" expanded="true" signature="4370:4428" ph="UPDATE RESUL... " />
-            <marker date="1503854484015" expanded="true" signature="4506:4541" ph="SELECT X, Y,... RESULTS" />
+            <marker date="1504478525718" expanded="true" signature="2117:2152" ph="INSERT INTO RESULTS... " />
+            <marker date="1504478525718" expanded="true" signature="2964:2999" ph="SELECT X, Y,... RESULTS" />
+            <marker date="1504478525718" expanded="true" signature="4453:4511" ph="UPDATE RESUL... " />
+            <marker date="1504478525718" expanded="true" signature="4589:4624" ph="SELECT X, Y,... RESULTS" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="100" column="22" lean-forward="false" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/MainPage.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="91" column="22" lean-forward="true" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+        <state relative-caret-position="114">
+          <caret line="80" column="21" lean-forward="false" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
           <folding>
-            <element signature="n#div#2;n#h:body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1503856257583" expanded="true" signature="2032:2171" ph="{...}" />
-            <marker date="1503856257583" expanded="true" signature="2541:2680" ph="{...}" />
-            <marker date="1503856257583" expanded="true" signature="3310:3449" ph="{...}" />
+            <marker date="1504485915911" expanded="true" signature="1926:2233" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1744,7 +1845,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>Web (IAD_lab8)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1784,6 +1885,7 @@
             <option name="proportions">
               <list>
                 <option value="0.23333333" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1807,7 +1909,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.23333333" />
+                <option value="0.50229883" />
               </list>
             </option>
           </splitter-proportions>
